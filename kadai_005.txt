@@ -1,0 +1,33 @@
+nagasawakyouhei@nagasawakyouheis-MacBook-Air git_challenge % cd /Users/nagasawakyouhei/Desktop     
+nagasawakyouhei@nagasawakyouheis-MacBook-Air Desktop % mkdir git_challenge
+nagasawakyouhei@nagasawakyouheis-MacBook-Air Desktop % cd  git_challenge
+nagasawakyouhei@nagasawakyouheis-MacBook-Air git_challenge % echo 'Hello, World!' > hello_world.txt
+nagasawakyouhei@nagasawakyouheis-MacBook-Air git_challenge % git add  hello_world.txt
+nagasawakyouhei@nagasawakyouheis-MacBook-Air git_challenge % git commit -m hello_worldを追加
+Auto packing the repository in background for optimum performance.
+See git help gc for manual housekeeping.
+warning: The last gc run reported the following. Please correct the root cause
+and remove .git/gc.log
+Automatic cleanup will not be performed until the file is removed.
+
+warning: There are too many unreachable loose objects; run 'git prune' to remove them.
+
+[main 2399df0] hello_worldを追加
+ 1 file changed, 1 insertion(+)
+ create mode 100644 Desktop/git_challenge/hello_world.txt
+nagasawakyouhei@nagasawakyouheis-MacBook-Air git_challenge % echo こんにちは、世界！ >> hello_world.txt
+nagasawakyouhei@nagasawakyouheis-MacBook-Air git_challenge % git add  hello_world.txt
+nagasawakyouhei@nagasawakyouheis-MacBook-Air git_challenge % git commit -m 日本語訳を追記
+Auto packing the repository in background for optimum performance.
+See git help gc for manual housekeeping.
+warning: The last gc run reported the following. Please correct the root cause
+and remove .git/gc.log
+Automatic cleanup will not be performed until the file is removed.
+
+warning: There are too many unreachable loose objects; run 'git prune' to remove them.
+
+[main 8226c38] 日本語訳を追記
+ 1 file changed, 1 insertion(+)
+nagasawakyouhei@nagasawakyouheis-MacBook-Air git_challenge % git log --oneline
+8226c38 (HEAD -> main) 日本語訳を追記
+2399df0 hello_worldを追加
